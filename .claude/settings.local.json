@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/AntonioMallol/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/0364a646-a63c-495c-ac9b-b632dc712c2a/18569b21-856a-4648-b220-4700ebdec3ca/skills/docx/**)",
+      "Bash(python scripts/office/extract-text.py \"C:\\\\Users\\\\AntonioMallol\\\\OneDrive - CTSM\\\\Documents\\\\GitHub\\\\Claude2\\\\CV Antonio Mallol_Dec2025_FLOW_.docx\")",
+      "Bash(pandoc \"C:\\\\Users\\\\AntonioMallol\\\\OneDrive - CTSM\\\\Documents\\\\GitHub\\\\Claude2\\\\CV Antonio Mallol_Dec2025_FLOW_.docx\" -t markdown)",
+      "PowerShell($docxPath = \"C:\\\\Users\\\\AntonioMallol\\\\OneDrive - CTSM\\\\Documents\\\\GitHub\\\\Claude2\\\\CV Antonio Mallol_Dec2025_FLOW_.docx\"; $tempDir = \"$env:TEMP\\\\cv_extract\"; if \\(Test-Path $tempDir\\) { Remove-Item $tempDir -Recurse -Force }; New-Item -ItemType Directory -Path $tempDir | Out-Null; [System.IO.Compression.ZipFile]::ExtractToDirectory\\($docxPath, $tempDir\\); $xmlPath = \"$tempDir\\\\word\\\\document.xml\"; [xml]$xml = Get-Content $xmlPath; $xml.InnerText)",
+      "Bash(cd /tmp)",
+      "Bash(unzip -q \"/mnt/c/Users/AntonioMallol/OneDrive - CTSM/Documents/GitHub/Claude2/CV Antonio Mallol_Dec2025_FLOW_.docx\" -d cv_extract)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --git --no-git-init --import-alias '@/*' --skip-install)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell($docxPath = \"C:\\\\Users\\\\AntonioMallol\\\\OneDrive - CTSM\\\\Documents\\\\GitHub\\\\Claude2\\\\CV Antonio Mallol_Dec2025_FLOW_.docx\"; $tempDir = \"$env:TEMP\\\\cv_$\\(Get-Random\\)\"; New-Item -ItemType Directory -Path $tempDir -Force | Out-Null; Copy-Item $docxPath -Destination \"$tempDir\\\\cv.zip\"; Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory\\(\"$tempDir\\\\cv.zip\", \"$tempDir\\\\extracted\"\\); [xml]$xml = Get-Content \"$tempDir\\\\extracted\\\\word\\\\document.xml\" -Encoding UTF8; $xml.InnerText | Select-Object -First 1)"
+    ]
+  }
+}
