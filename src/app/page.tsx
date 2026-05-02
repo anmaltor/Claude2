@@ -53,15 +53,15 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
+          <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
           <p className="text-lg mb-8 text-blue-100">
-            Looking for an experienced operations leader? Let's discuss how I can help drive your project forward.
+            Have a question or want to discuss a specific project? I'd be happy to connect.
           </p>
           <Link
             href="/contact"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
           >
-            Get In Touch
+            Contact Me
           </Link>
         </div>
       </section>

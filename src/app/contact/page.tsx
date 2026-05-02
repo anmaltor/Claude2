@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
           <p className="text-xl text-gray-600">
-            Have a question or opportunity? I'd love to hear from you. Feel free to reach out or use the form below.
+            Have a question or want to discuss a project? Feel free to reach out using the information below or send me a message.
           </p>
         </div>
 
