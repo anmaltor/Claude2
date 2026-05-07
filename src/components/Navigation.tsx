@@ -30,6 +30,9 @@ export default function Navigation() {
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
                 Contact
               </Link>
+              <Link href="/condensation" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+                Condensation
+              </Link>
             </div>
           </div>
 
@@ -60,6 +63,9 @@ export default function Navigation() {
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">
               Contact
+            </Link>
+            <Link href="/condensation" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+              Condensation
             </Link>
           </div>
         </div>
