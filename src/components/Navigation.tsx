@@ -27,6 +27,9 @@ export default function Navigation() {
               <Link href="/projects" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
                 Projects
               </Link>
+              <Link href="/condensation" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
+                Condensation Forecast
+              </Link>
               <Link href="/contact" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
                 Contact
               </Link>
@@ -57,6 +60,9 @@ export default function Navigation() {
             </Link>
             <Link href="/projects" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">
               Projects
+            </Link>
+            <Link href="/condensation" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">
+              Condensation Forecast
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">
               Contact
